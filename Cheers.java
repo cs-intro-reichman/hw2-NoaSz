@@ -1,4 +1,3 @@
-// Prints a crowd cheering output.
 public class Cheers {
     public static void main(String[] args) {
         String word = args[0].toUpperCase();
@@ -8,7 +7,8 @@ public class Cheers {
 
         for (int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
-            String article = (anLetters.indexOf(ch) != -1) ? "an" : "a  ";
+            // Ajout d'un espace après "a" ou "an"
+            String article = (anLetters.indexOf(ch) != -1) ? "an " : "a ";
             System.out.println("Give me " + article + ch + ": " + ch + "!");
         }
 
