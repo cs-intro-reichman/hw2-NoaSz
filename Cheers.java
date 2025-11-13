@@ -8,8 +8,8 @@ public class Cheers {
 
         for (int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
-            String article = (anLetters.indexOf(ch) != -1) ? "an" : "a";
-            System.out.println("Give me " + article + " " + ch + ": " + ch + "!");
+            String article = (anLetters.indexOf(ch) != -1) ? "an" : "a  ";
+            System.out.println("Give me " + article + ch + ": " + ch + "!");
         }
 
         System.out.println("What does that spell?");
