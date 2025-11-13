@@ -4,7 +4,7 @@ public class CalcPi {
 	int var1 = Integer.parseInt(var0[0]);
 	double var2 = 0.0;
 
-	for(int var4=0; var4 < var1; ++var4) {
+	for(int var4 = 0; var4 < var1; ++var4) {
 		var2 += Math.pow(-1.0, (double)var4) / (2.0 * (double)var4 + 1.0);
 	}
 
