@@ -17,11 +17,7 @@ public class TimeCalc {
 
         int newHours = totalHours % 24;               
         int newMinutes = totalMinutes % 60; 
+        System.out.printf("%02d:%02d%n", newHours, newMinutes);
 
-        System.out.println("Hours: " + hours);
-        System.out.println("Minutes: " + minutes);
-        System.out.println("Minutes to add: " + minutesToAdd);
-        System.out.println("New hours: " + newHours);
-        System.out.println("New minutes: " + newMinutes);
     }
 }

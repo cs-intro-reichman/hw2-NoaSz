@@ -5,7 +5,7 @@ public class CalcPi {
 	double var2 = 0.0;
 
 	for(int var4=0; var4 < var1; ++var4) {
-		var2 += Math.pow(-1.0, (double)var4 / (2.0 * (double)var4 + 1.0));
+		var2 += Math.pow(-1.0, (double)var4) / (2.0 * (double)var4 + 1.0);
 	}
 
 	double var6 = 4.0 * var2;
