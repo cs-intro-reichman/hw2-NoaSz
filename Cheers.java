@@ -7,8 +7,17 @@ public class Cheers {
 
         for (int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
-            // Ajout d'un espace après "a" ou "an"
-            String article = (anLetters.indexOf(ch) != -1) ? "an " : "a ";
+
+            boolean useAn = anLetters.indexOf(ch) != -1;
+
+            // article + espaces EXACTS comme GitHub le veut
+            String article;
+            if (useAn) {
+                article = "an ";   // un espace après "an"
+            } else {
+                article = "a  ";   // DEUX espaces après "a"
+            }
+
             System.out.println("Give me " + article + ch + ": " + ch + "!");
         }
 
